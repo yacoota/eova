@@ -1,0 +1,301 @@
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+\--- org.projectlombok:lombok:1.18.12
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.projectlombok:lombok:1.18.12
++--- cn.eova:eova:1.6.0
+|    +--- mysql:mysql-connector-java:5.1.20
+|    +--- com.jfinal:jfinal:3.4
+|    |    \--- cglib:cglib-nodep:3.2.5
+|    +--- cglib:cglib-nodep:3.1 -> 3.2.5
+|    +--- com.jfinal:cos:2017.5
+|    +--- com.ibeetl:beetl:2.7.22
+|    |    \--- org.antlr:antlr4-runtime:4.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.1
+|    |         \--- org.antlr:antlr4-annotations:4.2
+|    +--- com.alibaba:druid:1.0.18
+|    +--- net.sf.ehcache:ehcache-core:2.5.2
+|    |    \--- org.slf4j:slf4j-api:1.6.1 -> 1.7.7
+|    +--- com.alibaba:fastjson:1.2.41
+|    +--- log4j:log4j:1.2.16
+|    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    +--- org.slf4j:slf4j-log4j12:1.6.2
+|    |    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    |    \--- log4j:log4j:1.2.16
+|    +--- net.sourceforge.jexcelapi:jxl:2.6.12
+|    |    \--- log4j:log4j:1.2.14 -> 1.2.16
+|    +--- net.lingala.zip4j:zip4j:1.3.1
+|    +--- org.quartz-scheduler:quartz:2.2.2
+|    |    +--- c3p0:c3p0:0.9.1.1
+|    |    \--- org.slf4j:slf4j-api:1.7.7
+|    +--- joda-time:joda-time:2.9.4
+|    \--- org.jodd:jodd-core:3.6.7
++--- com.jfinal:jetty-server:8.1.8
+|    +--- org.eclipse.jetty:jetty-xml:8.1.8.v20121106
+|    |    \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
+|    \--- org.eclipse.jetty:jetty-servlet:8.1.8.v20121106
+|         \--- org.eclipse.jetty:jetty-security:8.1.8.v20121106
+|              \--- org.eclipse.jetty:jetty-server:8.1.8.v20121106
+|                   +--- org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016
+|                   +--- org.eclipse.jetty:jetty-continuation:8.1.8.v20121106
+|                   \--- org.eclipse.jetty:jetty-http:8.1.8.v20121106
+|                        \--- org.eclipse.jetty:jetty-io:8.1.8.v20121106
+|                             \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
++--- org.springframework:spring-test:4.3.5.RELEASE
+|    \--- org.springframework:spring-core:4.3.5.RELEASE
++--- junit:junit:4.11
+|    \--- org.hamcrest:hamcrest-core:1.3
++--- javax.servlet:javax.servlet-api:4.0.1
+\--- org.mortbay.jetty:jsp-2.0:6.1.26
+     +--- tomcat:jasper-compiler-jdt:5.5.15
+     |    \--- org.eclipse.jdt:core:3.1.1
+     +--- org.mortbay.jetty:servlet-api:2.5-20081211
+     +--- tomcat:jasper-compiler:5.5.15
+     |    \--- ant:ant:1.6.5
+     +--- org.mortbay.jetty:jsp-api-2.0:6.1.26
+     |    \--- org.mortbay.jetty:servlet-api:2.5-20081211
+     \--- tomcat:jasper-runtime:5.5.15
+          \--- commons-el:commons-el:1.0
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+\--- org.projectlombok:lombok:1.18.12 (n)
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+developmentOnly
+No dependencies
+
+implementation - Implementation only dependencies for source set 'main'. (n)
++--- cn.eova:eova:1.6.0 (n)
++--- com.jfinal:jetty-server:8.1.8 (n)
++--- org.springframework:spring-test:4.3.5.RELEASE (n)
++--- junit:junit:4.11 (n)
++--- javax.servlet:javax.servlet-api:4.0.1 (n)
+\--- org.mortbay.jetty:jsp-2.0:6.1.26 (n)
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- cn.eova:eova:1.6.0
+|    +--- mysql:mysql-connector-java:5.1.20
+|    +--- com.jfinal:jfinal:3.4
+|    |    \--- cglib:cglib-nodep:3.2.5
+|    +--- cglib:cglib-nodep:3.1 -> 3.2.5
+|    +--- com.jfinal:cos:2017.5
+|    +--- com.ibeetl:beetl:2.7.22
+|    |    \--- org.antlr:antlr4-runtime:4.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.1
+|    |         \--- org.antlr:antlr4-annotations:4.2
+|    +--- com.alibaba:druid:1.0.18
+|    +--- net.sf.ehcache:ehcache-core:2.5.2
+|    |    \--- org.slf4j:slf4j-api:1.6.1 -> 1.7.7
+|    +--- com.alibaba:fastjson:1.2.41
+|    +--- log4j:log4j:1.2.16
+|    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    +--- org.slf4j:slf4j-log4j12:1.6.2
+|    |    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    |    \--- log4j:log4j:1.2.16
+|    +--- net.sourceforge.jexcelapi:jxl:2.6.12
+|    |    \--- log4j:log4j:1.2.14 -> 1.2.16
+|    +--- net.lingala.zip4j:zip4j:1.3.1
+|    +--- org.quartz-scheduler:quartz:2.2.2
+|    |    +--- c3p0:c3p0:0.9.1.1
+|    |    \--- org.slf4j:slf4j-api:1.7.7
+|    +--- joda-time:joda-time:2.9.4
+|    \--- org.jodd:jodd-core:3.6.7
++--- com.jfinal:jetty-server:8.1.8
+|    +--- org.eclipse.jetty:jetty-xml:8.1.8.v20121106
+|    |    \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
+|    \--- org.eclipse.jetty:jetty-servlet:8.1.8.v20121106
+|         \--- org.eclipse.jetty:jetty-security:8.1.8.v20121106
+|              \--- org.eclipse.jetty:jetty-server:8.1.8.v20121106
+|                   +--- org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016
+|                   +--- org.eclipse.jetty:jetty-continuation:8.1.8.v20121106
+|                   \--- org.eclipse.jetty:jetty-http:8.1.8.v20121106
+|                        \--- org.eclipse.jetty:jetty-io:8.1.8.v20121106
+|                             \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
++--- org.springframework:spring-test:4.3.5.RELEASE
+|    \--- org.springframework:spring-core:4.3.5.RELEASE
++--- junit:junit:4.11
+|    \--- org.hamcrest:hamcrest-core:1.3
++--- javax.servlet:javax.servlet-api:4.0.1
+\--- org.mortbay.jetty:jsp-2.0:6.1.26
+     +--- org.slf4j:slf4j-api:1.3.1 -> 1.7.7
+     +--- org.slf4j:slf4j-simple:1.3.1
+     |    \--- org.slf4j:slf4j-api:1.3.1 -> 1.7.7
+     +--- tomcat:jasper-compiler-jdt:5.5.15
+     |    \--- org.eclipse.jdt:core:3.1.1
+     +--- org.slf4j:jcl104-over-slf4j:1.3.1
+     +--- xerces:xmlParserAPIs:2.6.2
+     +--- commons-el:commons-el:1.0
+     +--- xerces:xercesImpl:2.6.2
+     +--- org.mortbay.jetty:servlet-api:2.5-20081211
+     +--- tomcat:jasper-compiler:5.5.15
+     |    \--- ant:ant:1.6.5
+     +--- org.mortbay.jetty:jsp-api-2.0:6.1.26
+     |    \--- org.mortbay.jetty:servlet-api:2.5-20081211
+     +--- ant:ant:1.6.5
+     \--- tomcat:jasper-runtime:5.5.15
+          \--- commons-el:commons-el:1.0
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+\--- org.projectlombok:lombok:1.18.12
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- cn.eova:eova:1.6.0
+|    +--- mysql:mysql-connector-java:5.1.20
+|    +--- com.jfinal:jfinal:3.4
+|    |    \--- cglib:cglib-nodep:3.2.5
+|    +--- cglib:cglib-nodep:3.1 -> 3.2.5
+|    +--- com.jfinal:cos:2017.5
+|    +--- com.ibeetl:beetl:2.7.22
+|    |    \--- org.antlr:antlr4-runtime:4.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.1
+|    |         \--- org.antlr:antlr4-annotations:4.2
+|    +--- com.alibaba:druid:1.0.18
+|    +--- net.sf.ehcache:ehcache-core:2.5.2
+|    |    \--- org.slf4j:slf4j-api:1.6.1 -> 1.7.7
+|    +--- com.alibaba:fastjson:1.2.41
+|    +--- log4j:log4j:1.2.16
+|    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    +--- org.slf4j:slf4j-log4j12:1.6.2
+|    |    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    |    \--- log4j:log4j:1.2.16
+|    +--- net.sourceforge.jexcelapi:jxl:2.6.12
+|    |    \--- log4j:log4j:1.2.14 -> 1.2.16
+|    +--- net.lingala.zip4j:zip4j:1.3.1
+|    +--- org.quartz-scheduler:quartz:2.2.2
+|    |    +--- c3p0:c3p0:0.9.1.1
+|    |    \--- org.slf4j:slf4j-api:1.7.7
+|    +--- joda-time:joda-time:2.9.4
+|    \--- org.jodd:jodd-core:3.6.7
++--- com.jfinal:jetty-server:8.1.8
+|    +--- org.eclipse.jetty:jetty-xml:8.1.8.v20121106
+|    |    \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
+|    \--- org.eclipse.jetty:jetty-servlet:8.1.8.v20121106
+|         \--- org.eclipse.jetty:jetty-security:8.1.8.v20121106
+|              \--- org.eclipse.jetty:jetty-server:8.1.8.v20121106
+|                   +--- org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016
+|                   +--- org.eclipse.jetty:jetty-continuation:8.1.8.v20121106
+|                   \--- org.eclipse.jetty:jetty-http:8.1.8.v20121106
+|                        \--- org.eclipse.jetty:jetty-io:8.1.8.v20121106
+|                             \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
++--- org.springframework:spring-test:4.3.5.RELEASE
+|    \--- org.springframework:spring-core:4.3.5.RELEASE
++--- junit:junit:4.11
+|    \--- org.hamcrest:hamcrest-core:1.3
++--- javax.servlet:javax.servlet-api:4.0.1
++--- org.mortbay.jetty:jsp-2.0:6.1.26
+|    +--- tomcat:jasper-compiler-jdt:5.5.15
+|    |    \--- org.eclipse.jdt:core:3.1.1
+|    +--- org.mortbay.jetty:servlet-api:2.5-20081211
+|    +--- tomcat:jasper-compiler:5.5.15
+|    |    \--- ant:ant:1.6.5
+|    +--- org.mortbay.jetty:jsp-api-2.0:6.1.26
+|    |    \--- org.mortbay.jetty:servlet-api:2.5-20081211
+|    \--- tomcat:jasper-runtime:5.5.15
+|         \--- commons-el:commons-el:1.0
+\--- org.projectlombok:lombok:1.18.12
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+\--- org.projectlombok:lombok:1.18.12 (n)
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- cn.eova:eova:1.6.0
+|    +--- mysql:mysql-connector-java:5.1.20
+|    +--- com.jfinal:jfinal:3.4
+|    |    \--- cglib:cglib-nodep:3.2.5
+|    +--- cglib:cglib-nodep:3.1 -> 3.2.5
+|    +--- com.jfinal:cos:2017.5
+|    +--- com.ibeetl:beetl:2.7.22
+|    |    \--- org.antlr:antlr4-runtime:4.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.1
+|    |         \--- org.antlr:antlr4-annotations:4.2
+|    +--- com.alibaba:druid:1.0.18
+|    +--- net.sf.ehcache:ehcache-core:2.5.2
+|    |    \--- org.slf4j:slf4j-api:1.6.1 -> 1.7.7
+|    +--- com.alibaba:fastjson:1.2.41
+|    +--- log4j:log4j:1.2.16
+|    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    +--- org.slf4j:slf4j-log4j12:1.6.2
+|    |    +--- org.slf4j:slf4j-api:1.6.2 -> 1.7.7
+|    |    \--- log4j:log4j:1.2.16
+|    +--- net.sourceforge.jexcelapi:jxl:2.6.12
+|    |    \--- log4j:log4j:1.2.14 -> 1.2.16
+|    +--- net.lingala.zip4j:zip4j:1.3.1
+|    +--- org.quartz-scheduler:quartz:2.2.2
+|    |    +--- c3p0:c3p0:0.9.1.1
+|    |    \--- org.slf4j:slf4j-api:1.7.7
+|    +--- joda-time:joda-time:2.9.4
+|    \--- org.jodd:jodd-core:3.6.7
++--- com.jfinal:jetty-server:8.1.8
+|    +--- org.eclipse.jetty:jetty-xml:8.1.8.v20121106
+|    |    \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
+|    \--- org.eclipse.jetty:jetty-servlet:8.1.8.v20121106
+|         \--- org.eclipse.jetty:jetty-security:8.1.8.v20121106
+|              \--- org.eclipse.jetty:jetty-server:8.1.8.v20121106
+|                   +--- org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016
+|                   +--- org.eclipse.jetty:jetty-continuation:8.1.8.v20121106
+|                   \--- org.eclipse.jetty:jetty-http:8.1.8.v20121106
+|                        \--- org.eclipse.jetty:jetty-io:8.1.8.v20121106
+|                             \--- org.eclipse.jetty:jetty-util:8.1.8.v20121106
++--- org.springframework:spring-test:4.3.5.RELEASE
+|    \--- org.springframework:spring-core:4.3.5.RELEASE
++--- junit:junit:4.11
+|    \--- org.hamcrest:hamcrest-core:1.3
++--- javax.servlet:javax.servlet-api:4.0.1
+\--- org.mortbay.jetty:jsp-2.0:6.1.26
+     +--- org.slf4j:slf4j-api:1.3.1 -> 1.7.7
+     +--- org.slf4j:slf4j-simple:1.3.1
+     |    \--- org.slf4j:slf4j-api:1.3.1 -> 1.7.7
+     +--- tomcat:jasper-compiler-jdt:5.5.15
+     |    \--- org.eclipse.jdt:core:3.1.1
+     +--- org.slf4j:jcl104-over-slf4j:1.3.1
+     +--- xerces:xmlParserAPIs:2.6.2
+     +--- commons-el:commons-el:1.0
+     +--- xerces:xercesImpl:2.6.2
+     +--- org.mortbay.jetty:servlet-api:2.5-20081211
+     +--- tomcat:jasper-compiler:5.5.15
+     |    \--- ant:ant:1.6.5
+     +--- org.mortbay.jetty:jsp-api-2.0:6.1.26
+     |    \--- org.mortbay.jetty:servlet-api:2.5-20081211
+     +--- ant:ant:1.6.5
+     \--- tomcat:jasper-runtime:5.5.15
+          \--- commons-el:commons-el:1.0
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed
